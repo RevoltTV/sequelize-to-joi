@@ -1,5 +1,5 @@
 import _   from 'lodash';
-import Joi from 'joi';
+import Joi from '@hapi/joi';
 
 const VALID_GEOJSON_TYPES = [
     'Point',

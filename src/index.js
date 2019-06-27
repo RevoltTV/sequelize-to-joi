@@ -1,5 +1,5 @@
 import _         from 'lodash';
-import Joi       from 'joi';
+import Joi       from '@hapi/joi';
 import Sequelize from 'sequelize';
 
 import map from './map';
