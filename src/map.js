@@ -1,5 +1,5 @@
 import _   from 'lodash';
-import Joi from 'joi';
+import Joi from '@hapi/joi';
 
 const VALID_GEOJSON_TYPES = [
     'Point',
@@ -139,7 +139,11 @@ export default function (attribute) {
     if (attribute.allowNull === false) {
         joi = joi.required();
     } else {
-        joi = joi.allow(null);
+        if (joi.schemaType === 'string') {
+            joi = joi.allow('', null);
+        } else {
+            joi = joi.allow(null);
+        }
     }
 
     if (typeof attribute.defaultValue !== 'undefined' && !_.isObject(attribute.defaultValue) && !_.isFunction(attribute.defaultValue)) {

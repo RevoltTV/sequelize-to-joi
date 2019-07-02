@@ -1,8 +1,8 @@
 {
   "name": "@revolttv/sequelize-to-joi",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "description": "Converts a sequelize Model schema to a Joi validator",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "jsnext:main": "src/index",
   "scripts": {
     "build": "babel ./src --out-dir ./lib",
@@ -38,7 +38,6 @@
     "eslint": "^3.0.1",
     "eslint-config-revolt": "^1.0.0",
     "eslint-plugin-react": "^6.7.0",
-    "joi": "^10.6.0",
     "mocha": "^3.1.2",
     "sequelize": "4.2.0",
     "sinon": "^1.17.4",
@@ -46,10 +45,11 @@
     "sqlite3": "^3.1.4"
   },
   "dependencies": {
+    "@hapi/joi": "^15.1.0",
     "lodash": "^4.13.1"
   },
   "peerDependencies": {
-    "joi": "^10.6.0 || ^11.0.0 || ^12.0.0 || ^13.0.0",
+    "@hapi/joi": "^15.0.0",
     "sequelize": "^4.2.0"
   },
   "babel": {

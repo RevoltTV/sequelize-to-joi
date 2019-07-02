@@ -1,6 +1,6 @@
 import { expect } from 'chai';
 import Sequelize  from 'sequelize';
-import Joi        from 'joi';
+import Joi        from '@hapi/joi';
 
 import sequelizeToJoi from '../src';
 
@@ -181,7 +181,7 @@ describe('sequelize-to-joi', () => {
                 }, { 
                     "type": "Feature",
                     "geometry": {
-                        "type": "LineString",
+                        "type": "Linestring",
                         "coordinates": [100.0, 1.0],
 
                     },
@@ -224,7 +224,7 @@ describe('sequelize-to-joi', () => {
                 }, { 
                     "type": "Feature",
                     "geometry": {
-                        "type": "LineString",
+                        "type": "Linestring",
                         //coordinates should be an array
                         "coordinates": 1,
 
