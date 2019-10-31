@@ -40,7 +40,7 @@
     "eslint-plugin-react": "^6.7.0",
     "joi": "^10.6.0",
     "mocha": "^3.1.2",
-    "sequelize": "4.2.0",
+    "sequelize": "5.15.1",
     "sinon": "^1.17.4",
     "sinon-chai": "^2.8.0",
     "sqlite3": "^3.1.4"
